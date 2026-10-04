@@ -1,6 +1,6 @@
 package org.example;
 
-public class RightTriangle extends Shape {
+public class RightTriangle extends Shape implements Polygon {
     private double legL;
     private double legW;
 
@@ -24,4 +24,8 @@ public class RightTriangle extends Shape {
         return legL + legW + hypotenuse;
     }
 
+    @Override 
+    public int numberOfSides() {
+        return 3;
+    }
 }

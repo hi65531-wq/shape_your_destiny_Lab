@@ -16,4 +16,9 @@ public class SquareTest {
         assertEquals(12.0, square.getPerimeter(), 0.001);
     }
     
+    @Test
+    public void testNumberOfSides() {
+        Square square = new Square(3);
+        assertEquals(4, square.numberOfSides());
+    }
 }

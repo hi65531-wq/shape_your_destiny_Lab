@@ -1,5 +1,5 @@
 package org.example;
 
 public interface Polygon {
-    int numOfSides();
+    int numberOfSides();
 }

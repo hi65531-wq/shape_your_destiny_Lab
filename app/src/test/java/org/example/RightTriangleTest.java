@@ -15,4 +15,10 @@ public class RightTriangleTest {
         RightTriangle rightTriangle = new RightTriangle(6, 8);
         assertEquals(24.0, rightTriangle.getPerimeter(), 0.001);
     }
+
+    @Test 
+    public void testNumberOfSides() {
+        RightTriangle rightTriangle = new RightTriangle(6, 8);
+        assertEquals(3, rightTriangle.numberOfSides());
+    }
 }

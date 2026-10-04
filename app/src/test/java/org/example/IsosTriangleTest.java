@@ -15,4 +15,10 @@ public class IsosTriangleTest {
         IsosTriangle isosTriangle = new IsosTriangle(6);
         assertEquals(20.4853, isosTriangle.getPerimeter(), 0.001);
     }
+
+    @Test 
+    public void testNumberOfSides() {
+        IsosTriangle isosTriangle = new IsosTriangle(6);
+        assertEquals(3, isosTriangle.numberOfSides());
+    }
 }

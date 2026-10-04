@@ -15,4 +15,11 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(5, 8);
         assertEquals(26.0, rectangle.getPerimeter(), 0.001);
     }
+
+    @Test 
+    public void testNumberOfSides() {
+        Rectangle rectangle = new Rectangle(5, 8);
+        assertEquals(4, rectangle.numberOfSides());
+    }
+
 }
